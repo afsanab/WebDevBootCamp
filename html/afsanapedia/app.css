@@ -1,7 +1,14 @@
-h1 {
-    color: blue;
+h2 {
+    color: rgb(213, 154, 247);
+    text-align: center;
+    text-decoration: underline
 }
 
 p {
-    color: red;
+    color: rgb(0, 21, 255);
+    font-family: arial;
+}
+
+button {
+    font-family: verdana;
 }
