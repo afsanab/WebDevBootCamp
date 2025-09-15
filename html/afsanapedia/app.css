@@ -20,11 +20,12 @@ button {
     color: pink
 }
 
+/* 
 .test2 {
     color: orange;
     font-family: georgia;
     text-align: right
-}
+} */
 
 span {
     color: red;
@@ -36,4 +37,12 @@ span a {
     color: purple;
     font-family: helvetica;
     text-decoration: none
+}
+
+p+button {
+    color: rgb(42, 165, 83);
+}
+
+li>a {
+    color: rgb(255, 87, 87);
 }
