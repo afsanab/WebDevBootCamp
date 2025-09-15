@@ -1,23 +1,23 @@
 h2 {
     color: rgb(213, 154, 247);
     text-align: center;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 p {
-    color: rgb(0, 21, 255);
+    color: rgb(105, 115, 227);
     font-family: arial;
 }
 
 #test {
     color: green;
     font-family: courier;
-    text-align: center
+    text-align: center;
 }
 
 button {
     font-family: verdana;
-    color: pink
+    color: pink;
 }
 
 /* 
@@ -28,21 +28,62 @@ button {
 } */
 
 span {
-    color: red;
+    color: rgb(13, 84, 0);
     font-family: tahoma;
-    text-align: left
+    text-align: left;
 }
 
 span a {
-    color: purple;
+    color: rgb(124, 29, 207);
     font-family: helvetica;
-    text-decoration: none
+    text-decoration: none;
+    font-weight: bold;
+}
+
+span a:hover {
+    text-decoration: underline;
 }
 
 p+button {
-    color: rgb(42, 165, 83);
+    color: rgb(145, 225, 172);
+    background-color: darkcyan;
 }
 
 li>a {
-    color: rgb(255, 87, 87);
+    color: rgb(252, 112, 112);
+    font-weight: bold;
+}
+
+input[type="password"] {
+    background-color: lightgrey;
+}
+
+input[type="text"] {
+    color: rgb(255, 255, 72);
+}
+
+button:hover {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+/*when clicked*/
+button:active {
+    background-color: blue;
+    color: white;
+}
+
+/* pseudo classes have 2 ::*/
+button::after {
+    content: "!";
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: red;
+}
+
+p::selection {
+    background-color: rgb(237, 237, 117);
+    color: black;
 }
