@@ -87,3 +87,7 @@ p::selection {
     background-color: rgb(237, 237, 117);
     color: black;
 }
+
+/* CSS Specificity - more specific wins + later declared also wins*/
+/* inline style > id > class > element */
+/* !important also wins */

@@ -1,2 +1,2 @@
 # WebDevBootCamp
-Projects/coding I did while taking this course
+Projects/practice coding I did while taking this course
