@@ -9,6 +9,31 @@ p {
     font-family: arial;
 }
 
+#test {
+    color: green;
+    font-family: courier;
+    text-align: center
+}
+
 button {
     font-family: verdana;
+    color: pink
+}
+
+.test2 {
+    color: orange;
+    font-family: georgia;
+    text-align: right
+}
+
+span {
+    color: red;
+    font-family: tahoma;
+    text-align: left
+}
+
+span a {
+    color: purple;
+    font-family: helvetica;
+    text-decoration: none
 }
