@@ -23,3 +23,15 @@ div {
     border-left-style: dotted;
     border-radius: 50%;
 }
+
+h1 {
+    /* shorthand to do all four sides */
+    padding: 20px;
+    background-color: pink;
+    width: 200px;
+}
+
+button {
+    /* top/right/bottom/left */
+    padding: 10px 20px 30px 40px;
+}
