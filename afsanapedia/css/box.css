@@ -8,12 +8,15 @@ div {
     border-color: black;
     border-width: 3px;
     border-style: dashed;
+    margin-left: 50px;
+    margin-bottom: 100px;
 }
 
 #two {
     border-color: red;
     border-style: solid;
     box-sizing: border-box;
+    margin: 30px;
 }
 
 #three {
@@ -29,6 +32,7 @@ h1 {
     padding: 20px;
     background-color: pink;
     width: 200px;
+    margin: 0px;
 }
 
 button {
