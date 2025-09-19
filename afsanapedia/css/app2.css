@@ -4,7 +4,6 @@ h1 {
     /* at least top and bottom margins and padding arent*/
     /* width/height are never respected in inline*/
     /* display: block; blocks are respected but break flow of page */
-
     color: rgb(183, 0, 255);
 }
 
