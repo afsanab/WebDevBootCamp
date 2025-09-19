@@ -10,3 +10,15 @@
     border-radius: 50%;
 
 }
+
+section div {
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    transition: margin-left 3s;
+}
+
+section:hover div {
+    margin-left: 500px;
+}
