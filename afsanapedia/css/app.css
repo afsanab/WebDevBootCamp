@@ -1,93 +1,14 @@
-h2 {
-    color: rgb(213, 154, 247);
-    text-align: center;
-    text-decoration: underline;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
-
-p {
-    color: rgb(105, 115, 227);
-    font-family: arial;
-}
-
-#test {
-    color: green;
-    font-family: courier;
+h1 {
     text-align: center;
 }
-
-button {
-    font-family: verdana;
-    color: pink;
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
 }
 
-/* 
-.test2 {
-    color: orange;
-    font-family: georgia;
-    text-align: right
-} */
-
-span {
-    color: rgb(13, 84, 0);
-    font-family: tahoma;
-    text-align: left;
-}
-
-span a {
-    color: rgb(124, 29, 207);
-    font-family: helvetica;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-span a:hover {
-    text-decoration: underline;
-}
-
-p+button {
-    color: rgb(145, 225, 172);
-    background-color: darkcyan;
-}
-
-li>a {
-    color: rgb(252, 112, 112);
-    font-weight: bold;
-}
-
-input[type="password"] {
-    background-color: lightgrey;
-}
-
-input[type="text"] {
-    color: rgb(255, 255, 72);
-}
-
-button:hover {
-    background-color: lightblue;
-    color: darkblue;
-}
-
-/*when clicked*/
-button:active {
-    background-color: blue;
-    color: white;
-}
-
-/* pseudo classes have 2 ::*/
-button::after {
-    content: "!";
-}
-
-p::first-letter {
-    font-size: 200%;
-    color: red;
-}
-
-p::selection {
-    background-color: rgb(237, 237, 117);
-    color: black;
-}
-
-/* CSS Specificity - more specific wins + later declared also wins*/
-/* inline style > id > class > element */
-/* !important also wins */
