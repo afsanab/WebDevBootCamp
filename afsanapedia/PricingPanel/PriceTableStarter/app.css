@@ -3,6 +3,10 @@ html {
     font-family: open sans, sans-serif;
 }
 
+ul {
+    list-style-type: none;
+}
+
 body {
     background-color: #60a9ff;
     display: flex;
@@ -98,5 +102,15 @@ body {
 @media (min-width:900px) {
     .panel {
         flex-direction: row;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
     }
 }
