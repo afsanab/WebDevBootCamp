@@ -13,12 +13,28 @@
     <div class=container>
         <h1>Placeholder</h1>
         <h1 class="display-1 text-center text-primary">Bootstrap Playground</h1>
-        <h2 class="display-4">Buttons</h2>
+        <h2 class="display-4">Buttons <span class="badge badge-success badge-pill">New</span></h2>
         <button type="button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-success">Success</button>
         <button type="button" class="btn btn-info">Info</button>
         <button type="button" class="btn btn-outline-warning btn-lg">Warning Outline</button>
-        <button type="button" class="btn btn-outline-danger btn-sm">Danger</button>
+        <button type="button" class="btn btn-outline-danger btn-sm" disabled>Danger Outline Disabled</button>
+        <button class="btn btn-primary">Updates <span class="badge badge-light">9</span></button>
+        <h3>Button Groups</h3>
+        <div class="btn-group">
+            <button class="btn btn-warning">One</button>
+            <button class="btn btn-warning">Two</button>
+            <button class="btn btn-warning">Three</button>
+        </div>
+        <h3>Alerts</h3>
+        <div class="alert alert-danger alert-dismissible fade show">
+            <h4>Oh No!</h4>
+            Danger you are about to die!
+            <button aria-label="Close" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
         <h2 class="display-4">Typography</h2>
         <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, dolor esse molestiae
             velit in libero
@@ -34,7 +50,7 @@
             repellat
             nam. Quidem doloribus omnis ea nisi debitis, asperiores quod, qui facilis veritatis magni, soluta sed
             necessitatibus possimus corrupti!</p>
-        <blockquote class="blockquote text-right">
+        <blockquote class="blockquote text-right bg-light">
             <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
                 doloremque
                 molestiae ex cumque
