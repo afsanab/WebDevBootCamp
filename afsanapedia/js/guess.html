@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+</head>
+
+<body>
+    <script>
+        let num = Math.floor(Math.random() * 10) + 1;
+        let guess = Number(prompt("Guess a number between 1 and 10"));
+        let counter = 1;
+
+        while (guess !== num) {
+            if (guess > num) {
+                alert("Too High");
+            } else {
+                alert("Too Low");
+            }
+            guess = Number(prompt("Guess a number between 1 and 10"));
+            counter++;
+        }
+
+        alert("You got it in " + counter + " guesses!");
+    </script>
+</body>
+
+</html>
