@@ -17,3 +17,4 @@ for (let i = 1; i <= 151; i++) {
     pokemon.appendChild(label);
     container.appendChild(pokemon)
 }
+
