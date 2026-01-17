@@ -25,7 +25,3 @@ while (input != "quit" && input != "q") {
     input = prompt("what would you like to do?")
 }
 console.log("Ok, You quit the app!")
-// coding is fun you just hate thinking now
-// because your so addicted to your phone
-// the only way to fix this is to keep pushing your limit and endurance
-// rewire your brain to be able to study for longer and longer
