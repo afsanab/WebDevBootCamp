@@ -1,43 +1,42 @@
-const p1Button = document.querySelector("#p1Button");
-const p2Button = document.querySelector("#p2Button");
+const p1 = {
+    score: 0,
+    button: document.querySelector("#p1Button"),
+    display: document.querySelector("#p1Display")
+}
 
-const p1Display = document.querySelector("#p1Display");
-const p2Display = document.querySelector("#p2Display");
+const p2 = {
+    score: 0,
+    button: document.querySelector("#p2Button"),
+    display: document.querySelector("#p2Display")
+}
 
 const resetButton = document.querySelector("#reset");
 const winningScoreSelect = document.querySelector("#playTo");
-
-let p1Score = 0;
-let p2Score = 0;
 let winningScore = 3;
 let gameOver = false;
 
-p1Button.addEventListener("click", function () {
+function updateScores(player, opp) {
     if (!gameOver) {
-        if (p1Score !== winningScore) {
-            p1Score += 1;
-            if (p1Score === winningScore) {
+        if (player.score !== winningScore) {
+            player.score += 1;
+            if (player.score === winningScore) {
                 gameOver = true;
+                player.display.classList.add("winner");
+                opp.display.classList.add("loser");
             }
-            p1Display.textContent = p1Score;
+            player.display.textContent = player.score;
         }
     }
+}
 
+p1.button.addEventListener("click", function () {
+    updateScores(p1, p2);
+});
+p2.button.addEventListener("click", function () {
+    updateScores(p2, p1);
 });
 
-p2Button.addEventListener("click", function () {
-    if (!gameOver) {
-        if (p2Score !== winningScore) {
-            p2Score += 1;
-            if (p2Score === winningScore) {
-                gameOver = true
-            }
-            p2Display.textContent = p2Score;
-        }
-    }
 
-
-});
 
 winningScoreSelect.addEventListener("change", function () {
     winningScore = parseInt(this.value);
@@ -46,9 +45,11 @@ winningScoreSelect.addEventListener("change", function () {
 resetButton.addEventListener("click", reset);
 
 function reset() {
-    p1Score = 0;
-    p2Score = 0;
-    p1Display.textContent = p1Score;
-    p2Display.textContent = p2Score;
+    p1.score = 0;
+    p2.score = 0;
+    p1.display.textContent = p1.score;
+    p2.display.textContent = p2.score;
     gameOver = false;
+    p1.display.classList.remove("winner", "loser");
+    p2.display.classList.remove("winner", "loser");
 };
