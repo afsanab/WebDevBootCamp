@@ -45,11 +45,11 @@ winningScoreSelect.addEventListener("change", function () {
 resetButton.addEventListener("click", reset);
 
 function reset() {
-    p1.score = 0;
-    p2.score = 0;
-    p1.display.textContent = p1.score;
-    p2.display.textContent = p2.score;
+    for (let p of [p1, p2]) {
+        p.score = 0;
+        p.display.textContent = p.score;
+        p.display.classList.remove("winner", "loser");
+    }
     gameOver = false;
-    p1.display.classList.remove("winner", "loser");
-    p2.display.classList.remove("winner", "loser");
+
 };
