@@ -1,2 +1,5 @@
-console.log("Hello from args file");
+for (let i = 2; i < process.argv.length; i++) {
+    console.log(`Hello ${process.argv[i]} from args file`);
+}
+
 console.log(process.argv);
