@@ -1,0 +1,16 @@
+{
+  "name": "language_guesser",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Afsana Bhuiyan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "franc": "^6.2.0",
+    "lang": "^0.1.1"
+  }
+}
