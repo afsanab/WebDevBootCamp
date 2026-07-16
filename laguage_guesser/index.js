@@ -7,7 +7,12 @@
 
 const franc = require('franc');
 const langs = require('langs');
-args = process.argv;
+const colors = require("colors");
+const languageCode = franc(process.argv[2].trim());
 
-console.log(args[2]);
-console.log(langs.where("3", franc(args[2])).name);
+if (languageCode === 'und') {
+    console.log("SORRY COULD'T FIGURE IT OUT".red);
+} else {
+    const language = langs.where("3", languageCode);
+    console.log(language.name.green);
+}
